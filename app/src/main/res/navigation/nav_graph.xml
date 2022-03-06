@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.developeralamin.mvvmnotesapp.ui.fragment.HomeFragment"
+        android:label="Notes App"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createNoteFragment"
+            app:destination="@id/createNoteFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createNoteFragment"
+        android:name="com.developeralamin.mvvmnotesapp.ui.fragment.CreateNoteFragment"
+        android:label="Add new Notes"
+        tools:layout="@layout/fragment_create_note">
+        <action
+            android:id="@+id/action_createNoteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.developeralamin.mvvmnotesapp.ui.fragment.EditNoteFragment"
+        android:label="Edit Notes"
+        tools:layout="@layout/fragment_edit_note">
+        <action
+            android:id="@+id/action_editNoteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            app:argType="com.developeralamin.mvvmnotesapp.model.Notes" />-->
+
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            android:defaultValue="@null"-->
+<!--            app:argType="com.developeralamin.mvvmnotesapp.model.Notes"-->
+<!--            app:nullable="true">-->
+
+<!--        </argument>-->
+
+    </fragment>
+</navigation>

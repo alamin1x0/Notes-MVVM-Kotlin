@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVMNotesApp</string>
+
+    <string name="life_is_too_fast_don_t_forget_anything_n_just_note_it">Life is too Fast don\'t forget anything\n just Note it!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
